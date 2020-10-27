@@ -29,7 +29,7 @@ class Announ:
     def viewing_ads(self):
         self.__views = self.__views + 1
 
-        return self.__heading, self.__description, self.__author, self.__views,self.__dates
+        return self.__heading, self.__description, self.__author, self.__views, "{}.{}.{}".format(self.__dates.day, self.__dates.month, self.__dates.year)
 
 
 
