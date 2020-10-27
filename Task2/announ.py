@@ -31,6 +31,15 @@ class Announ:
 
         return self.__heading, self.__description, self.__author, self.__views, "{}.{}.{}".format(self.__dates.day, self.__dates.month, self.__dates.year)
 
+    def write_in_file(self):
+        with open("C:\python\Homework\Task2\\announs.txt", 'a') as somefile:
+
+            somefile.write(self.__heading + '\t ')
+            somefile.write(self.__description + '\t ')
+            somefile.write(self.__author + '\t ')
+            somefile.write(str(self.__views) + '\t ')
+            somefile.write(str(self.__dates) + '\n')
+
 
 
 
