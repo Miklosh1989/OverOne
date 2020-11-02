@@ -8,3 +8,4 @@ class Personal(Human):
     
     def __str__(self):
         return f'name: {self._name}, last name: {self._last_name}, duties {self.__duties}'
+

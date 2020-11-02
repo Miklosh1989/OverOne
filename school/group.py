@@ -9,7 +9,7 @@ class Group:
         self.__teachers = teachers
 
     def __str__(self):
-        return f'{self.__number}'
+        return f'{self.__number}, {self.__students}'
 
     @property
     def students(self):
@@ -57,21 +57,8 @@ class Group:
 
 
 
-s1 = Student("Ivan", "Petrov", 19, 4)
-s2 = Student("Petr", "Petrov", 19, 4)
-t1 = Teacher("Alex", "Sidorov", 76, 34)
-t2 = Teacher("Semen", "Sidorov", 34, 4)
-
-g1 = Group(1, [s1, s2], [t1, t2])
 
 
-g1.add_student(Student("Max", "Ivanov", 19, 8.1))
-# g1.remove_student("Petr", "Petrov")
-print(g1.check_students())
-print(g1.check_teachers())
-for i in g1.students:
-     print(i)
-# 
-# print(g1.add_teacher(Teacher("Max", "Ivanov", 39, 19)))
-# for i in g1.teachers:
-#     print(i)
+
+
+
